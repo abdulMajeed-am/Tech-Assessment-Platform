@@ -1,3 +1,47 @@
+Overview
+This project is a responsive User Dashboard for a Tech Assessment Platform, designed as part of the recruitment process for the Frontend Developer Intern position at Coders Boutique. The dashboard allows users to manage their assessments and view their progress while adhering to modern UI/UX principles.
+
+Features
+Dashboard Features
+Header Section
+
+Logo placeholder and navigation links: Dashboard, Assessments, Profile.
+User avatar with a dropdown menu for Settings and Logout.
+Assessments Overview Section
+
+Table displaying:
+Assessment Title
+Status (Not Started, In Progress, Completed)
+Score (if completed)
+Date Assigned
+Sorting functionality by Date Assigned and Status.
+Assessment Summary Cards
+
+Total Assessments: Displays the total number of assessments assigned.
+Completed Assessments: Shows the count of completed assessments.
+Start New Assessment
+
+A button opens a modal or new page with a dummy message to simulate starting a new assessment.
+Backend Features
+Database
+
+A Supabase table named assessments with columns:
+id, title, status, score, and date_assigned.
+API Endpoints
+
+GET: Fetch assessments data from the database.
+PUT: Update assessment status and score.
+Bonus Features Implemented (Optional)
+A search bar to filter assessments by title.
+Progress bar visualizing the completion rate of assessments.
+Animated transitions for table sorting and modal openings.
+Technology Stack
+Frontend: Next.js, Typescipt, Javascript
+Backend: supabase, Next.js API routes
+Deployment: Vercel (live demo provided below)
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
