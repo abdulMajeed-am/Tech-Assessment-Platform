@@ -1,0 +1,63 @@
+/* Container for the cards */
+.summary-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+}
+
+/* Individual card styles */
+.summary-card {
+  background-color: #f9f9f9; /* Light background for cards */
+  border: 1px solid #e0e0e0; /* Subtle border */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  padding: 20px;
+  width: 100%; /* Full width by default for small screens */
+  max-width: 300px; /* Restrict card width */
+  text-align: center; /* Center-align content */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings in cards */
+.summary-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Numbers in cards */
+.summary-card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff; /* Blue accent for numbers */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .summary-cards-container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+  }
+
+  .summary-card {
+    width: 90%; /* Take up most of the width on smaller screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .summary-cards-container {
+    justify-content: space-around; /* Space out cards evenly */
+  }
+
+  .summary-card {
+    max-width: 40%; /* Cards take up less width on medium screens */
+  }
+}
